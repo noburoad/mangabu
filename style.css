@@ -1,0 +1,1016 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    line-height: 250%;
+    font-family: 'Lato', sans-serif;
+
+}
+.site-width{
+    width: 980px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.signup-form-container {
+  margin: 30px auto;
+  width: 50%;
+  padding: 20px;
+  border: 5px solid  rgb(152, 204, 235);
+  border-radius: 10px;
+}
+.signup-form {
+  width: 100%;
+}
+a,
+a:active,
+a:focus {
+  color: #b6a489;
+}
+a{
+    text-decoration: none;
+}
+.price {
+  display: block;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+.num {
+    font-family: 'Montserrat', sans-serif;
+  }
+  /*ヘッダー*/
+  .header {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    padding-left: 32px;
+    padding-right: 32px;
+    background-color: rgb(152, 204, 235);
+    align-items: center;
+    justify-content: space-between;
+    
+}
+header > h1{
+   font-size: 30px;
+   display: inline-block;
+   padding-left: 32px;
+}
+header h1 a {
+    color: white;
+}
+header h1 a:hover{
+  border: 3px solid white;
+  border-radius: 20px;
+  padding:5px;
+}
+.page-title{
+  margin: 20px auto;
+  border-left: 6px solid rgb(152, 204, 235);
+}
+/*メニュー*/
+.top-img > img{
+    display: block;
+    width: 100%;
+    height: 700px;
+    padding: 0 24px;
+    margin: 0 auto;
+}
+
+.top-nav ul {
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  padding-top: 10px;
+}
+nav ul li a{
+  display: block;
+  padding: 5px;
+  color:white;
+  border: 3px solid white;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+nav ul li a:hover{
+  background-color: white;
+  border:3px solid rgb(152, 204, 235);
+  color:rgb(152, 204, 235)!important;
+}
+/*トップページ*/
+#i-main{
+  width:100%;
+  margin:0 auto;
+}
+.h2{
+  font-size: 30px;
+  width:100%;
+  text-align: center;
+  color:rgb(152, 204, 235);
+}
+#signup-form h2,#login-form h2 {
+  color: #5f5d60;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+}
+#submit-btn {
+  display: block;
+  width: 50px;
+  padding: 14px 14px;
+  background-color: #f5b67c;
+  border: none;
+  color: white;
+  margin: 10px auto;
+  border-radius: 10px;
+  text-decoration: none;
+  cursor: pointer;
+}
+#submit-btn:hover {
+  opacity: 0.8;
+}
+/*サイドバー*/
+#sidebar{
+    margin-top: 10px;
+    width: 20%;
+    height: 600px;
+    margin: 10px;
+    text-align: center;
+    border: 0 none #a09c9c;
+    background-color: rgb(152, 204, 235);
+    color:white;
+    display: block;
+    float: left;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+#sidebar > a {
+  color:white;
+  display: block;
+  margin-bottom: 5px;
+  padding: 10px;
+}
+#sidebar a:hover{
+  color: rgb(152, 204, 235)!important;
+  background: #fff;
+  border: solid 2px rgb(152, 204, 235);
+}
+
+#main{
+    float: left;
+    width: 70%;
+    margin:10px;
+}
+.search-title{
+    height:40px;
+    background-color: rgb(152, 204, 235);
+    color:white;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom:10px;
+}
+.search-left{
+    float: left;
+}
+.search-right{
+    float: right;
+}
+.list{/*プロフ等のリスト回り込み回避*/
+  clear: both;
+}
+.list > .title {
+    padding-left: 10px;
+    border-left: 6px solid rgb(152, 204, 235);
+  }
+  .panel-list {
+    overflow: hidden;
+    margin-right: -15px;
+  }
+  
+  .panel-list > .panel {
+    float: left;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    padding-right: 15px;
+    width: 24%;
+    color: #333;
+    text-decoration: none;
+    line-height: 1.2em;
+  }
+  .panel > .panel-head{
+    min-height: 180px;
+  }
+
+  a.panel:hover {
+    text-decoration: underline;
+  }
+  
+  .panel-list > .panel img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .panel-list > .panel .panel-title {
+    margin: 0;
+    text-align: center;
+  }
+    .pagination {
+        position: relative;
+        overflow: hidden;
+      }
+      
+      .pagination-list {
+        position: relative;
+        left: 50%;
+        float: left;
+        padding-left: 0;
+        list-style: none;
+      }
+      
+      .pagination .list-item {
+        position: relative;
+        left: -50%;
+        float: left;
+        margin-right: 5px;
+      }
+      
+      .pagination .list-item:last-child {
+        margin-right: 0;
+      }
+      
+      .pagination .list-item a {
+        display: block;
+        padding: 5px 10px;
+        background: #eee;
+        color: black;
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+      }
+      
+      .pagination .list-item.active a {
+        background: #333;
+        color: white;
+      }
+      
+      .pagination .list-item a:hover {
+        background: #333;
+        color: white;
+      }
+/*フッター*/
+      footer{
+          display: block;
+          position: relative;;
+        clear: both;
+        text-align: center;
+        background-color: rgb(152, 204, 235);
+        color: white;
+      }
+/*マイページ・プロフィール*/
+.prof-img{
+  float: left;
+  width: 40%;
+  margin-right:50px;
+}
+form .prof-area-drop{
+  margin: 15px;
+  width: 40%;
+  height: 200px;
+  background: #fff;
+  color: #ccc;
+  float: left;
+  position: relative;
+  line-height: 200px;
+  box-sizing: border-box;
+
+}
+form .prof-area-drop > img{
+  width:100%;
+  border-radius: 20px;;
+  position: absolute;
+  top: 0;
+  left:0;
+}
+form .area-drop{
+  margin: 15px;
+  width: 40%;
+  height:200px;
+  background:#fff;
+  color:#ccc;
+  text-align: center;
+  line-height: 150px;
+  float: left;
+  box-sizing:border-box;
+}
+.area-prof{
+  float: left;
+  width:50%;
+}
+.prof-img img{
+  width: 100%;
+  border-radius: 100%;
+}
+.my-prof > .title{
+  padding-left: 10px;
+  border-left: 6px solid rgb(152, 204, 235);
+}
+.prof {
+  width:40%;
+  margin-left: 20px;
+  height: 400px;
+  float: left;
+}
+.prof > .prof-comment{
+  height: 150px;
+}
+.prof-title{
+  font-weight: bold;
+  margin: 0 10px;
+  padding: 10px 10px 0 0;
+}
+.prof-bg{
+  padding:5px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 0 10px;
+}
+.img-change{
+  text-align: center;
+  margin-top:0;
+}
+
+
+/*メンター登録、編集画面*/
+label > input[type="text"].mentor{
+  display: block;
+    width: 80%;
+    height: 50px;
+    background:#f5f5f5;
+    margin: 0 auto;
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+/*連絡掲示板*/
+.list-table > table{
+  width: 100%;
+  border-spacing: 0 5px;
+}
+/*入力フォーム*/
+.p-form{
+  float: left;
+  width: 100%;
+}
+.prof-edit{
+  overflow: hidden;
+  width:100%;
+}
+label > input[type="text"]{
+  display: block;
+  width: 80%;
+  height: 50px;
+  margin: 0 auto;
+  font-size: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+label > input[type="password"]{
+  display: block;
+  width: 80%;
+  height: 50px;
+  margin: 0 auto;
+  font-size: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+label > input[type="checkbox"]{
+  width: 16px;
+  height: 16px;
+  background: #f6f5f5;
+}
+label > textarea{
+  width:100%;
+  font-size: 16px;
+  border: none;
+}
+.form select{
+  display: block;
+  width: 80%;
+  height: 50px;
+  margin: 0 auto;
+  font-size: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.form .label-require{
+  margin-left: 5px;
+  background:#fe8a8b;
+  font-size:14px;
+  padding: 3px 5px;
+  color: white;
+  vertical-align: bottom;
+}
+form .area-msg{
+  padding: 0 0 15px 30px;
+  color: red;
+}
+label.err input[type="text"]{
+  background: #f7dcd9;
+}
+label.err input[type="password"]{
+  background: #f7dcd9;
+}
+#submit-btn {
+  width:50%;
+}
+.withdraw{
+  width:60%;
+  height:300px;
+  margin: 0 auto;
+  padding:10px;
+  border: 4px solid white;
+}
+/*メンター検索*/
+.mentorList-card{
+  display: flex;
+  justify-content: flex-start;
+  padding: 30px 20px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  background: #fff;
+  border: 1px solid #f6f6f6;
+  border-bottom: 3px solid #e8e8e8;
+  box-shadow: 0 2px 6px 0 rgba(60,66,87,.01);
+}
+.mentorList-face {
+  width: 110px;
+}
+.mentorList-face .icon {
+  margin: 0;
+}
+.icon {
+  margin: 0 auto;
+  border-radius: 50%;
+  background-position: top;
+  background-size: cover;
+}
+.size85 {
+  width: 85px;
+  height: 85px;
+}
+.mentorList-body {
+  flex: 1;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.mentorList-body-name {
+  margin-bottom: 5px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.mentorList-body-name-face {
+  display: none;
+  width: 40px;
+}
+.mentorList-body-name a {
+  color: #12b1bf;
+}
+.mentorList-body-name .name {
+  font-weight: 700;
+  margin-right: 10px;
+}
+.fa, .fas {
+  font-weight: 900;
+}
+.fa, .far, .fas {
+  font-family: "Font Awesome 5 Free";
+}
+.mentorList-body-title {
+  width: 100%;
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 10px 0;
+}
+.mentorList-body-score {
+  color: #8b8b8b;
+  font-size: .8rem;
+}
+.tag {
+  padding: 4px 8px;
+  font-size: .7rem;
+  background: #f1f1f1;
+  color: #0f939f;
+  border: none;
+  margin-right: 5px;
+  border-radius: 0;
+  cursor: pointer;
+  text-decoration: none!important;
+}
+.yellow {
+  color: #fdca00;
+}
+.mentorList-body-price {
+  color: #8b8b8b;
+  font-size: .8rem;
+}
+.mentorList-btn {
+  width: 150px;
+  font-size: .8rem;
+  padding-left: 20px;
+}
+.mentorList-btn .btn {
+  width: 100%;
+  font-size: .7rem;
+  border-radius: 40px;
+  padding: 4px 13px!important;
+  margin: 0 0 10px;
+  display: block;
+  box-sizing: border-box;
+}
+.btn {
+  text-align: center;
+  border-radius: 20px;
+  border: 2px solid rgb(152, 204, 235);
+  text-decoration: none;
+  padding: 9px 24px;
+  background: #fff;
+  cursor: pointer;
+  font-weight: 700;
+  color: rgb(152, 204, 235);
+}
+.hanten:hover{
+  color: #fff!important;
+  background: rgb(152, 204, 235)!important;
+}
+/*メンター詳細画面*/
+#mentor-sidebar {
+  float: left;
+  width: 25%;
+  position: sticky;
+  margin-top: 20px;
+  margin-bottom: 0;
+  top: 80px;
+ 
+  height: 100vh;
+}
+.mentor-side{
+  background: #fff;
+  border: 1px solid #f6f6f6;
+  border-bottom: 3px solid #e8e8e8;
+  border-radius: 4px;
+  padding: 15px;
+  box-shadow: 0 2px 6px 0 rgba(60,66,87,.01);
+}
+.size125 {
+  width: 125px;
+  height: 125px;
+}
+.wborder {
+  border: 3px solid #fff;
+}
+.soudan {
+    text-align: center;
+    line-height: 1.5;
+    background: #517d99;
+    padding: 2px 10px;
+    color: #fff;
+    border-radius: 5px;
+    display: block;
+    margin: 10px 0;
+}
+.mentor-side p.name {
+    width: 100%;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.4;
+    text-align: center;
+}
+.followbox {
+  padding: 0 20px;
+  text-align: left;
+}
+.follow {
+  display: flex;
+  margin-bottom: 10px;
+  border: 1px solid #13b1c0;
+  background: #fff;
+  border-radius: 6px;
+  color: #13b1c0;
+}
+.follow .w50p {
+  width: 50%;
+  padding: 5px 0;
+  text-align: center;
+  border-right: 1px solid #13b1c0;
+}
+.follow .title {
+  font-weight: 700;
+  font-size: 11px;
+}
+.follow .member {
+  font-size: 13px;
+}
+.follow .w50p:nth-child(3n) {
+  border: none;
+}
+.selfcheck {
+  font-size: .8rem;
+  margin-bottom: 10px;
+  text-align: center;
+  color: rgb(152, 204, 235);
+}
+.m-b2 {
+  margin-bottom: 20px;
+}
+.FollowArea{
+  text-align: center;
+}
+.hyouka_box {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 20px 20px;
+}
+.icon_menta,.icon_money,.icon_heart {
+  color: #737373;
+  background-repeat: no-repeat;
+  background-size: 15px 13px;
+  background-position: 0 10px;
+  line-height: 34px;
+  font-weight: 400;
+  height: 34px;
+  font-size: 13px;
+  text-align: left;
+  box-sizing: border-box;
+  width: 55%;
+}
+.hyouka_box .right {
+  margin-left: auto;
+  width: 45%;
+  text-align: right;
+  font-weight: 700;
+  font-size: 13px;
+  height: 34px;
+  line-height: 34px;
+}
+.m-b1 {
+  margin-bottom: 10px;
+}
+.SideMessageArea {
+  text-align: center;
+}
+.SideMessageArea__sub {
+  padding: 0 20px;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 12px;
+}
+/*メンター詳細の右側*/
+#mentor-main {
+  float: left;
+  width: 66%;
+  margin: 20px;
+  background-color: #fff;
+  padding: 20px;
+}
+.detail-title h1 {
+  color: #4f5050;
+  font-size: 32px;
+  line-height: 1.3;
+  padding: 10px 0;
+}
+.plz-tearch {
+  text-align: center;
+}
+.plz-tearch a{
+  display: inline-block;
+  width: 160px;
+  height: 45px;
+}
+.product-img-container{
+  overflow: hidden;
+}
+.product-img-container img{
+  width: 100%;
+}
+.product-img-container .img-main{
+  width: 750px;
+  float: left;
+}
+.product-img-container .img-sub{
+  width: 100%;
+  float: left;
+  background: #f6f5f4;
+  padding: 15px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.product-img-container .img-sub img{
+  width: 30%;
+  min-height: 120px;
+}
+.product-img-container .img-sub img:last-child{
+  margin-bottom: 0;
+}
+.product-detail{
+  background: #f6f5f4;
+  padding: 15px;
+  margin-top: 15px;
+  margin-bottom: 20px;;
+  min-height: 150px;
+}
+/*フォロー中*/
+#f-main {
+  float: left;
+  width: 70%;
+  margin:10px;
+  background-color: #fff;
+  padding-left: 10px;
+}
+.i-panel-head {
+  min-height: 180px;
+}
+/*メンター申込み*/
+.mentor-please {
+  text-align: center;
+}
+.mentor-prof {
+  overflow: hidden;
+}
+.mentor-please-btn {
+  width:40%;
+  height: 10%;
+  margin: 0 auto;
+}
+.mentor-please-btn .btn{
+  width:100%;
+  display: inline-block;
+  
+}
+/*メッセージ掲示板*/
+#msg-prof {
+  overflow: hidden;
+  width: 100%;
+  padding-right:10px;
+}
+.msg-prof {
+  background-color: #fff;
+  border-radius:10px;
+  overflow: hidden;
+  width: 100%;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 200px;
+  float: left;
+}
+.msg-prof-img{
+  float: left;
+  margin: 0 auto;
+  width: 125px;
+  height:125px;
+  margin-right:50px;
+  background-size: cover;
+  background-position: top;
+  border-radius: 100%;
+}
+.msg-prof-img img{
+  width: 100%;
+  height: 100%;
+}
+.msg-prof-sub > .title{
+  padding-left: 10px;
+  border-left: 6px solid rgb(152, 204, 235);
+}
+.msg-prof-sub {
+  float: left;
+}
+.msg-prof-title{
+  font-weight: bold;
+  margin: 0 10px;
+  padding: 10px 10px 0 0;
+}
+.msg-prof-bg{
+  padding:5px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 0 10px;
+}
+.msg-img-change{
+  text-align: center;
+  margin-top:0;
+}
+.msg-info{
+  background: #f6f5f4;
+  padding: 15px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.msg-info .avatar{
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+}
+.msg-info .avatar-img{
+  text-align: center;
+  width: 100px;
+  float: left;
+}
+.msg-info .avatar-info{
+  float: left;
+  padding-left: 15px;
+  width: 500px;
+}
+.msg-info .product-info{
+  float: left;
+  padding-left: 15px;
+  width: 315px;
+}
+.msg-info .product-info .left,
+.msg-info .product-info .right{
+  float: left;
+}
+.msg-info .product-info .right{
+  padding-left: 15px;
+}
+.msg-info .product-info .price{
+  display: inline-block;
+}
+.area-bord{
+  height: 500px;
+  overflow-y: scroll;
+  background: #f6f5f4;
+  padding: 15px;
+}
+.area-send-msg{
+  background: #f6f5f4;
+  padding: 15px;
+  overflow: hidden;
+}
+.area-send-msg textarea{
+  width:100%;
+  background: white;
+  height: 100px;
+  padding: 15px;
+}
+.area-send-msg .btn-send{
+  width: 150px;
+  float: right;
+  margin-top: 0;
+}
+.area-bord .msg-cnt{
+  width: 90%;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.area-bord .msg-cnt .avatar{
+  width: 10%;
+  overflow: hidden;
+  margin-top:10px;
+  float: left;
+}
+.area-bord .msg-cnt .avatar img{
+  width: 60px;
+  height: 60px;
+  border-radius: 20px;
+  float: left;
+}
+.area-bord .msg-cnt .msg-inrTxt{
+  width: 75%;
+  float: left;
+  border-radius: 16px;
+  padding: 10px;
+  margin: 0 0 0 25px;
+  position: relative;
+}
+.area-bord .msg-cnt.msg-left .msg-inrTxt{
+  background: #f6e2df;
+}
+.area-bord .msg-cnt.msg-left .msg-inrTxt > .triangle{
+  position: absolute;
+  left: -20px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-right: 15px solid #f6e2df;
+  border-left: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+.area-bord .msg-cnt.msg-right{
+  float: right;
+}
+.area-bord .msg-cnt.msg-right .msg-inrTxt{
+  background: #d2eaf0;
+  margin: 0 25px 0 0;
+}
+.area-bord .msg-cnt.msg-right .msg-inrTxt > .triangle{
+  position: absolute;
+  right: -20px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-left: 15px solid #d2eaf0;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+.area-bord .msg-cnt.msg-right .msg-inrTxt{
+  float: right;
+}
+.area-bord .msg-cnt.msg-right .avatar{
+  float: right;
+}
+/*メンター登録*/
+select {
+  -webkit-writing-mode: horizontal-tb !important;
+  text-rendering: auto;
+  color: black;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  -webkit-appearance: menulist;
+  box-sizing: border-box;
+  align-items: center;
+  white-space: pre;
+  -webkit-rtl-ordering: logical;
+  background-color: rgb(248, 248, 248);
+  cursor: default;
+  margin: 0em;
+  font: 400 11px system-ui;
+  border-radius: 5px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(166, 166, 166);
+  border-image: initial;
+}
+.page-logined #main {
+  border: 5px solid #f1f1f1;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+.form-container {
+  margin: 0 auto;
+}
+.form {
+  margin: 0 auto;
+  padding: 30px;
+  width: 550px;
+}
+.form .input-file{
+  opacity: 0;
+  width:100%;
+  height: 140px;
+  position: absolute;
+  top:0;
+  left:0;
+  z-index: 2;
+}
+.form .prof-input-file{
+  opacity: 0;
+  width:100%;
+  height: 140px;
+  position: absolute;
+  top:0;
+  left:0;
+  z-index: 2;
+}
+.form .prev-img{
+  width: 100%;
+  position: absolute;
+  top:0;
+  left:0;
+}
+.form .imgDrop-container{
+  width: 33.333%;
+  float: left;
+  padding-right:15px;
+  box-sizing: border-box;
+}
+.btn-container {
+  text-align: center;
+}
+
+.msg-slide {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 40%;
+  background: rgba(152, 204, 235,0.7);
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  line-height: 40px;
+}
