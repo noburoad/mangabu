@@ -57,7 +57,7 @@ if(!empty($_POST)) {
                          debug('クエリ成功');
 
                          //メールを送信
-                         $from = 'lowrise3641@gmail.com';
+                         $from = '';
                          $to = $_SESSION['auth_email'];
                          $subject = 'パスワード再発行完了';
                          $comment = <<<EOT
@@ -69,8 +69,8 @@ if(!empty($_POST)) {
 ※ログイン後、パスワードの変更をお願いいたします。
 
 /////////////////////////////////////////////
-まんが めんたカスタマーセンター
-URL: http://mangamenta.com/
+マンガ部！！　カスタマーセンター
+URL: http:///
 /////////////////////////////////////////////
 EOT;
                         sendMail($from,$to,$subject,$comment);
