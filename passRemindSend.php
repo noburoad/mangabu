@@ -45,7 +45,7 @@ if(!empty($_POST)) {
                     $auth_key = makeRandKey();
 
                     //メールを送信
-                    $from = 'lowrise3641@gmail.com';
+                    $from = '';
                     $to = $email;
                     $subject = '[パスワード再発行認証] | まんが めんた';
                     $comment = <<<EOT
@@ -60,7 +60,7 @@ if(!empty($_POST)) {
 http://localhost:8888/web_output01/passRemindSend.php
 
 /////////////////////////////////////////
-まんが めんた カスタマーセンター
+マンガ部！！カスタマーセンター
 URL: http://mangamenta.com/
 /////////////////////////////////////////
 EOT;
