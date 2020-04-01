@@ -169,13 +169,10 @@ function validPass($str,$key) {
 //DB接続関数
 function dbConnect(){
     //DBへの接続準備
-    global $endpoint;
-    global $userName;
-    global $passWord;
 
-    $dsn = $endpoint;
-    $user = $userName;
-    $password = $passWord;
+    $dsn = 
+    $user = 
+    $password = 
     $options = array(
         //SQL実行失敗時にはエラ〜コードのみ設定
         PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING,
