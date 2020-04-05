@@ -1,5 +1,6 @@
 <?php
 require('config.php');
+require('msg.php');
 //ログをとるか
 ini_set('log_errors','on');
 //ログの出力ファイルを指定
@@ -40,35 +41,6 @@ function debugLogStart(){
         debug('ログイン期限日時タイムスタンプ:'.($_SESSION['login_date'] + $_SESSION['login_limit']));
     }
 }
-
-//エラーメッセージを定数に設定
-define('MSG01','入力必須です');
-define('MSG02','Emailの形式で入力してください');
-define('MSG03','パスワード(再入力)が合っていません');
-define('MSG04','半角英数字のみご利用いただけます');
-define('MSG05','6文字以上で入力してください');
-define('MSG06','256文字以内で入力してください');
-define('MSG07','エラーが発生しました。しばらく経ってからお試しください');
-define('MSG08','そのEmailは既に登録されています');
-define('MSG09','正しくありません');
-define('MSG10','半角数字で入力してください');
-define('MSG11','古いパスワードが違います');
-define('MSG12','古いパスワードが同じです');
-define('MSG13','正しくありません');
-define('MSG14','有効期限が切れています');
-define('MSG15','文字で入力してください');
-
-define('SUC01','パスワードを変更しました');
-define('SUC02','プロフィールを変更しました');
-define('SUC03','メールを送信しました');
-define('SUC04','登録しました');
-define('SUC05','更新しました');
-define('SUC06','受講をお願いしました！連絡を取りましょう！');
-define('SUC07','入部しました！プロフィールを編集しましょう！');
-define('SUC08','ログインしました！');
-
-
-
 
 
 //エラーメッセージ格納用の配列
